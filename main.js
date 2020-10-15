@@ -1,6 +1,9 @@
 function icao() {
 
 let input = document.getElementById("input").value;
+document.getElementById("input").value = '';
+document.getElementById("output").innerHTML = ' ';
+
 input = input.toUpperCase();
 
 let convert = {
@@ -48,8 +51,8 @@ for (let i = 0; i <= divid.length; i++) {
 if (divid[i] in convert) {
 
 let result = (convert[divid[i]]);
-document.getElementById("output").innerHTML += `${result +"&nbsp;"} `;
 
+document.getElementById("output").innerHTML += `${result +"&nbsp;"} `; 
 }
 
 }
